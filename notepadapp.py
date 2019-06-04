@@ -10,8 +10,8 @@ class Notes(Widget):
 
 	def Savenotes(self):
 		global final_note_to_save
-		print(type(self.notes))
-		print(self.notes.text)
+		#print(type(self.notes))
+		#print(self.notes.text)
 		
 		s="\n"+self.notes.text+"\n"
 		final_note_to_save=s
