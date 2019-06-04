@@ -1,0 +1,30 @@
+##parent tags
+<Notes>
+	notes:notes
+
+	FloatLayout:
+		size: root.width, root.height
+
+		Label:
+			pos_hint:{"top":1}
+			size_hint: 1,0.08
+			text: "NOTEPAD APP"
+		TextInput:
+			id:notes
+			pos_hint:{"left":1}
+			size_hint: 1,0.9
+			multiline: True
+			font_size: (root.width**2 + root.height**2) / 14**4
+
+		Button:
+			pos_hint:{"left":1}
+			size_hint:0.5,0.1
+			text: "Clear All"
+			on_press: root.cleartf()
+
+		Button:
+			pos_hint:{"right":1}
+			size_hint:0.5,0.1
+			text: "Save"
+			on_press: root.Savenotes()
+
